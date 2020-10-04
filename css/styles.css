@@ -135,8 +135,12 @@ table {
   box-sizing: border-box;
 }
 
-body {
-  background: lightcoral;
+/* Start variables */
+/* End variables */
+html {
+  font-size: 15rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

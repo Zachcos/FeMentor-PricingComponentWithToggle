@@ -1,5 +1,14 @@
 @import "reset";
 
-body {
-  background: lightcoral;
+/* Start variables */
+$veryLightGrayishBlue: hsl(240, 78%, 98%);
+$lightGrayishBlue: hsl(234, 14%, 74%);
+$grayishBlue: hsl(233, 13%, 49%);
+$darkGrayishBlue: hsl(232, 13%, 33%);
+/* End variables */
+
+html {
+  font-size: 15rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
