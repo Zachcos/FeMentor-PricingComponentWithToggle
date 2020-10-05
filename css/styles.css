@@ -138,9 +138,15 @@ table {
 /* Start variables */
 /* End variables */
 html {
-  font-size: 15rem;
+  font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+body {
+  background: #f6f6fe;
+  width: 100%;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

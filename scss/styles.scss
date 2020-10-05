@@ -13,7 +13,13 @@ $gradient: linear-gradient(
 /* End variables */
 
 html {
-  font-size: 15rem;
+  font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+body {
+  background: $veryLightGrayishBlue;
+  width: 100%;
+  min-height: 100vh;
 }
