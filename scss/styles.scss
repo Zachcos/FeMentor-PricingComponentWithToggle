@@ -22,8 +22,7 @@ $gradientTtoB: linear-gradient(
   hsl(237, 63%, 64%) 100%
 );
 
-$breakpointSmall: "700px";
-$breakpointLarge: "1200px";
+$breakpoint: "1200px";
 /* End variables */
 html {
   font-size: 15px;
@@ -34,7 +33,7 @@ html {
 body {
   background: url("../images/bg-top.svg"), $veryLightGrayishBlue;
   background-repeat: no-repeat;
-  background-position: 200px -30px;
+  background-position: top -30px right -200px;
   width: 100%;
   min-height: 100vh;
   padding: 1.6rem;
@@ -219,23 +218,24 @@ body {
   }
 }
 
-@media screen and (min-width: $breakpointSmall) {
+@media screen and (min-width: $breakpoint) {
   body {
     background: url("../images/bg-top.svg"), url("../images/bg-bottom.svg"),
       $veryLightGrayishBlue;
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom left;
-  }
-}
-
-@media screen and (min-width: $breakpointLarge) {
-  body {
     padding: 1.6rem 12rem;
   }
 
   .main-wrapper {
     flex-direction: row;
     .card {
+      &:first-child {
+        border-radius: 0.75rem 0 0 0.75rem;
+      }
+      &:last-child {
+        border-radius: 0 0.75rem 0.75rem 0;
+      }
       &--featured {
         .card-title {
           padding: 3.5rem 0 2rem 0;

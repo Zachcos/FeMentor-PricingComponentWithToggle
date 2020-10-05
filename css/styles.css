@@ -146,7 +146,7 @@ html {
 body {
   background: url("../images/bg-top.svg"), #f6f6fe;
   background-repeat: no-repeat;
-  background-position: 200px -30px;
+  background-position: top -30px right -200px;
   width: 100%;
   min-height: 100vh;
   padding: 1.6rem;
@@ -312,20 +312,22 @@ body {
   color: #696fdd;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1200px) {
   body {
     background: url("../images/bg-top.svg"), url("../images/bg-bottom.svg"), #f6f6fe;
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom left;
-  }
-}
-@media screen and (min-width: 1200px) {
-  body {
     padding: 1.6rem 12rem;
   }
 
   .main-wrapper {
     flex-direction: row;
+  }
+  .main-wrapper .card:first-child {
+    border-radius: 0.75rem 0 0 0.75rem;
+  }
+  .main-wrapper .card:last-child {
+    border-radius: 0 0.75rem 0.75rem 0;
   }
   .main-wrapper .card--featured .card-title {
     padding: 3.5rem 0 2rem 0;
