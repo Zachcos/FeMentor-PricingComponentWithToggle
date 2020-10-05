@@ -54,8 +54,8 @@ body {
     }
     label {
       display: inline-block;
-      height: 2rem;
-      width: 3.5rem;
+      height: 2.2rem;
+      width: 3.75rem;
       position: relative;
       margin: 0 2rem;
 
@@ -100,13 +100,13 @@ body {
           height: 1.55rem;
           width: 1.55rem;
           position: absolute;
-          left: 0.2rem;
+          left: 0.3rem;
           transition: all 0.5s ease;
         }
       }
 
       input:checked + span:before {
-        left: calc(100% - 1.55rem - 0.2rem);
+        left: calc(100% - 1.55rem - 0.3rem);
       }
     }
   }
@@ -125,6 +125,7 @@ body {
     }
     .dollar {
       font-size: 2.5rem;
+      margin-right: 0.35rem;
     }
     .price {
       display: flex;
