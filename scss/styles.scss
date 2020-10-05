@@ -32,9 +32,13 @@ body {
   padding: 1.6rem;
 }
 
+.heading-wrapper,
+.main-wrapper {
+  margin: 3.2rem 0;
+}
+
 .heading-wrapper {
   text-align: center;
-  margin: 3.2rem 0;
   h1 {
     font-size: 2rem;
     color: $grayishBlue;
@@ -104,6 +108,24 @@ body {
       input:checked + span:before {
         left: calc(100% - 1.55rem - 0.2rem);
       }
+    }
+  }
+}
+
+.main-wrapper {
+  .card {
+    text-align: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    .card-title {
+      color: $grayishBlue;
+      font-size: 1.2rem;
+      padding: 2rem 0;
+    }
+    .price {
+      color: $darkGrayishBlue;
+      font-size: 3.5rem;
     }
   }
 }

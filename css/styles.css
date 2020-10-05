@@ -153,9 +153,13 @@ body {
   padding: 1.6rem;
 }
 
+.heading-wrapper,
+.main-wrapper {
+  margin: 3.2rem 0;
+}
+
 .heading-wrapper {
   text-align: center;
-  margin: 3.2rem 0;
 }
 .heading-wrapper h1 {
   font-size: 2rem;
@@ -220,6 +224,22 @@ body {
 }
 .heading-wrapper .toggle-wrapper label input:checked + span:before {
   left: calc(100% - 1.55rem - 0.2rem);
+}
+
+.main-wrapper .card {
+  text-align: center;
+  background: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.main-wrapper .card .card-title {
+  color: #6d708d;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+}
+.main-wrapper .card .price {
+  color: #494c5f;
+  font-size: 3.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
