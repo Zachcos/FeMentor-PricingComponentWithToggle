@@ -160,6 +160,7 @@ body {
 
 .heading-wrapper {
   text-align: center;
+  margin-bottom: 5rem;
 }
 .heading-wrapper h1 {
   font-size: 2rem;
@@ -232,6 +233,23 @@ body {
   border-radius: 0.5rem;
   margin-bottom: 2rem;
 }
+.main-wrapper .card.card--featured {
+  background: linear-gradient(180deg, #a3a8f0 0%, #696fdd 100%);
+}
+.main-wrapper .card.card--featured .card-title,
+.main-wrapper .card.card--featured .price,
+.main-wrapper .card.card--featured .stats-wrapper > .stat {
+  color: #f6f6fe;
+}
+.main-wrapper .card.card--featured button {
+  background: #f6f6fe;
+  color: #696fdd;
+}
+.main-wrapper .card.card--featured button:hover {
+  background: transparent;
+  color: #f6f6fe;
+  border: 1px solid #f6f6fe;
+}
 .main-wrapper .card .card-title {
   color: #6d708d;
   font-size: 1.2rem;
@@ -248,6 +266,42 @@ body {
   color: #494c5f;
   font-size: 4.5rem;
   margin-bottom: 2rem;
+}
+.main-wrapper .card .stats-wrapper .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  color: #6d708d;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+  height: 100%;
+  border-top: 1px solid #b3b5c6;
+}
+.main-wrapper .card .stats-wrapper .stat:last-child {
+  border-bottom: 1px solid #b3b5c6;
+  margin-bottom: 2rem;
+}
+.main-wrapper .card button {
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  border: none;
+  color: #f6f6fe;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  width: 80%;
+}
+.main-wrapper .card button:hover {
+  background: transparent;
+  border: 1px solid #494c5f;
+  color: #696fdd;
 }
 
 /*# sourceMappingURL=styles.css.map */
