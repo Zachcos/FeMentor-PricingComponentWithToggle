@@ -19,7 +19,24 @@ html {
 }
 
 body {
-  background: $veryLightGrayishBlue;
+  background: url("../images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: 200px -30px;
+  background-color: $veryLightGrayishBlue;
   width: 100%;
   min-height: 100vh;
+  padding: 1.6rem;
+}
+
+.heading-wrapper {
+  text-align: center;
+  margin: 3.2rem 0;
+  h1 {
+    font-size: 2rem;
+    color: $grayishBlue;
+    letter-spacing: 1px;
+  }
+  .toggle-wrapper {
+    margin: 2.575rem 0;
+  }
 }

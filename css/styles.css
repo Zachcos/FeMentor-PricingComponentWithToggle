@@ -144,9 +144,26 @@ html {
 }
 
 body {
-  background: #f6f6fe;
+  background: url("../images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: 200px -30px;
+  background-color: #f6f6fe;
   width: 100%;
   min-height: 100vh;
+  padding: 1.6rem;
+}
+
+.heading-wrapper {
+  text-align: center;
+  margin: 3.2rem 0;
+}
+.heading-wrapper h1 {
+  font-size: 2rem;
+  color: #6d708d;
+  letter-spacing: 1px;
+}
+.heading-wrapper .toggle-wrapper {
+  margin: 2.575rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
