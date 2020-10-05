@@ -21,6 +21,9 @@ $gradientTtoB: linear-gradient(
   hsl(236, 72%, 79%) 0%,
   hsl(237, 63%, 64%) 100%
 );
+
+$breakpointSmall: "700px";
+$breakpointLarge: "1200px";
 /* End variables */
 html {
   font-size: 15px;
@@ -29,18 +32,19 @@ html {
 }
 
 body {
-  background: url("../images/bg-top.svg");
+  background: url("../images/bg-top.svg"), $veryLightGrayishBlue;
   background-repeat: no-repeat;
   background-position: 200px -30px;
-  background-color: $veryLightGrayishBlue;
   width: 100%;
   min-height: 100vh;
   padding: 1.6rem;
+  margin: 0 auto;
 }
 
 .heading-wrapper,
 .main-wrapper {
-  margin: 3.2rem 0;
+  margin: 3.2rem auto;
+  width: 100%;
 }
 
 .heading-wrapper {
@@ -123,11 +127,16 @@ body {
 }
 
 .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .card {
     text-align: center;
     background: #fff;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     margin-bottom: 2rem;
+    width: 100%;
+    max-width: 25rem;
 
     &.card--featured {
       background: $gradientTtoB;
@@ -205,6 +214,35 @@ body {
         background: transparent;
         border: 1px solid $darkGrayishBlue;
         color: $purpleAccent;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpointSmall) {
+  body {
+    background: url("../images/bg-top.svg"), url("../images/bg-bottom.svg"),
+      $veryLightGrayishBlue;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom left;
+  }
+}
+
+@media screen and (min-width: $breakpointLarge) {
+  body {
+    padding: 1.6rem 12rem;
+  }
+
+  .main-wrapper {
+    flex-direction: row;
+    .card {
+      &--featured {
+        .card-title {
+          padding: 3.5rem 0 2rem 0;
+        }
+        button {
+          margin-bottom: 3.5rem;
+        }
       }
     }
   }
