@@ -10,8 +10,12 @@ $gradient: linear-gradient(
   hsl(236, 72%, 79%) 0%,
   hsl(237, 63%, 64%) 100%
 );
+$hoverGradient: linear-gradient(
+  90deg,
+  hsl(240, 51%, 87%) 0%,
+  hsl(238, 57%, 83%) 100%
+);
 /* End variables */
-
 html {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
@@ -38,5 +42,68 @@ body {
   }
   .toggle-wrapper {
     margin: 2.575rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .toggle-label {
+      color: $lightGrayishBlue;
+    }
+    label {
+      display: inline-block;
+      height: 2rem;
+      width: 3.5rem;
+      position: relative;
+      margin: 0 2rem;
+
+      &:hover {
+        span {
+          background: $hoverGradient;
+        }
+      }
+
+      input {
+        appearance: none;
+        bottom: 0;
+        display: block;
+        height: 100%;
+        left: 0;
+        margin: 0;
+        max-width: 100%;
+        outline: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        background: $gradient;
+        border-radius: 1.4rem;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        position: absolute;
+        transition: all 0.5s ease;
+
+        &:before {
+          background-color: #fff;
+          border-radius: 50%;
+          content: "";
+          height: 1.55rem;
+          width: 1.55rem;
+          position: absolute;
+          left: 0.2rem;
+          transition: all 0.5s ease;
+        }
+      }
+
+      input:checked + span:before {
+        left: calc(100% - 1.55rem - 0.2rem);
+      }
+    }
   }
 }
